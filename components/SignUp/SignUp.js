@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Text, TextInput, View, Button } from "react-native";
 import { useNavigate } from "react-router-native";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import styles from "./style";
 

@@ -1,7 +1,10 @@
-import React from "react";
-import { Text, View } from "react-native";
+import { useState } from "react";
+import { Text, TextInput, View, Button } from "react-native";
+import { useNavigate } from "react-router-native";
 
-export const Home = () => {
+import styles from "./style";
+
+const Home = () => {
   return (
     <View>
       <Text>Home</Text>
