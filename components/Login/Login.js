@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-native";
 import { Text, View, TextInput, Button } from "react-native";
 import { AsyncStorage } from "react-native";
 import { API_KEY, API_URL } from "@env";
+import { supabase } from "../api/supabase.js";
 
-import { decode } from "react-native-pure-jwt";
 import { UserContext } from "../contexts/User";
 
 import styles from "./style";
@@ -22,6 +22,7 @@ const Login = () => {
 
   useEffect(() => {
     checkTokenAndRedirect();
+    // AsyncStorage.clear();
   }, []);
 
   const storeTokenInLocalStorage = async (token) => {
@@ -42,24 +43,13 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     try {
-      const request = await fetch(
-        `${API_URL}/auth/v1/token?grant_type=password`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            apikey: API_KEY,
-          },
-          body: JSON.stringify(formState),
-        }
-      );
-      const response = await request.json();
-      console.log(response);
-
-      if (response?.access_token) {
-        !userToken && storeTokenInLocalStorage(response?.access_token);
-        console.log("response user", response.user);
-        context.setUser(response?.user);
+      let { data, error } = await supabase.auth.signInWithPassword({
+        email: formState.email,
+        password: formState.password,
+      });
+      if (data?.session?.access_token) {
+        !userToken && storeTokenInLocalStorage(data?.session?.access_token);
+        context.setUser(data?.user);
         navigate("/Home");
       }
     } catch (error) {
@@ -92,7 +82,6 @@ const Login = () => {
           color={"#8D86C9"}
           onPress={() => navigate("/signup")}
         />
-        {/* TO DELETE */}
       </View>
     </View>
   );

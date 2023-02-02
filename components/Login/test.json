@@ -1,0 +1,45 @@
+{
+  "session": {
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNjc1MzM1NTc2LCJzdWIiOiI3OGE2YzUyMy0yNDBhLTRmYjMtYWM4MC02NzVmODIzMjRlMTUiLCJlbWFpbCI6ImZsb3JlbnQubW5zQGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsicGhvbmUiOiIwNjQ2MDM0MjQxIn0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE2NzUzMzE5NzZ9XSwic2Vzc2lvbl9pZCI6ImYzOTNhZjQxLWFiYWItNDc1NC04M2RhLTBmNzg0MDBiZjVhNyJ9.3StpL4CT6unuiQbrq3mcmLkb3x7Afmn9Fj5MHStc5jw",
+    "expires_at": 1675335578,
+    "expires_in": 3600,
+    "refresh_token": "RMVFzVjDxmrvjh7WUZuO4w",
+    "token_type": "bearer",
+    "user": {
+      "app_metadata": 1,
+      "aud": "authenticated",
+      "confirmation_sent_at": "2023-01-30T12:42:55.380414Z",
+      "confirmed_at": "2023-01-30T12:45:11.584769Z",
+      "created_at": "2023-01-30T12:42:55.375413Z",
+      "email": "florent.mns@gmail.com",
+      "email_change_sent_at": "2023-01-31T08:16:23.655702Z",
+      "email_confirmed_at": "2023-01-30T12:45:11.584769Z",
+      "id": "78a6c523-240a-4fb3-ac80-675f82324e15",
+      "identities": 1,
+      "last_sign_in_at": "2023-02-02T09:59:36.255152888Z",
+      "new_email": "florent.mns@gmail.co",
+      "phone": "",
+      "role": "authenticated",
+      "updated_at": "2023-02-02T09:59:36.257221Z",
+      "user_metadata": 1
+    }
+  },
+  "user": {
+    "app_metadata": { "provider": "email", "providers": 1 },
+    "aud": "authenticated",
+    "confirmation_sent_at": "2023-01-30T12:42:55.380414Z",
+    "confirmed_at": "2023-01-30T12:45:11.584769Z",
+    "created_at": "2023-01-30T12:42:55.375413Z",
+    "email": "florent.mns@gmail.com",
+    "email_change_sent_at": "2023-01-31T08:16:23.655702Z",
+    "email_confirmed_at": "2023-01-30T12:45:11.584769Z",
+    "id": "78a6c523-240a-4fb3-ac80-675f82324e15",
+    "identities": [],
+    "last_sign_in_at": "2023-02-02T09:59:36.255152888Z",
+    "new_email": "florent.mns@gmail.co",
+    "phone": "",
+    "role": "authenticated",
+    "updated_at": "2023-02-02T09:59:36.257221Z",
+    "user_metadata": { "phone": "0646034241" }
+  }
+}
